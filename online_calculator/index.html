@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Slot Fishway Performance Metric Calculator Version 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="converter-container">
+       <h1>Vertical Slot Fishway Performance Metric Calculator</h1>
+       <h2>Version 2</h2>
+       <div class="input-group">
+            <label for="fishLength">Fish Length (mm):</label>
+            <input type="number" id="fishLength" value="100" min="20" max="1200">
+        </div>
+       <div class="input-group">
+            <label for="maxLoss">Maximum Slot Water Level Differential (mm):</label>
+            <input type="number" id="maxLoss" value="100" min="0">
+        </div>
+       <div class="input-group">
+            <label for="entryLoss">Entry Slot Differential (mm):</label>
+            <input type="number" id="entryLoss" value="100" min="0">
+        </div>
+        <div class="input-group">
+            <label for="maxTurb">Maximum Pool TDR (W/m^3):</label>
+            <input type="number" id="maxTurb" value="30" min="0">
+        </div>
+        <div class="input-group">
+            <label for="minDepth">Minimum Depth (m):</label>
+            <input type="number" id="minDepth" value="1.0" min="0">
+        </div>
+        <div class="input-group">
+            <label for="minWidth">Minimum Slot Width (mm):</label>
+            <input type="number" id="minWidth" value="150" min="0">
+        </div>
+        <button onclick="convertUnits()">Calculate</button>
+        <div class="result">
+            <p>Max Slot Loss Component: <span id="maxLossResult"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
