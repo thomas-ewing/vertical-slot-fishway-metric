@@ -18,13 +18,13 @@
             <label for="maxLoss">Maximum Slot Water Level Differential (mm):</label>
             <input type="number" id="maxLoss" value="100" min="0">
         </div>
-       <div class="input-group">
-            <label for="entryLoss">Entry Slot Differential (mm):</label>
-            <input type="number" id="entryLoss" value="100" min="0">
-        </div>
         <div class="input-group">
             <label for="maxTurb">Maximum Pool TDR (W/m^3):</label>
             <input type="number" id="maxTurb" value="30" min="0">
+        </div>
+       <div class="input-group">
+            <label for="entryLoss">Entry Slot Velocity (ms^-1):</label>
+            <input type="number" id="entryVelocity" value="1" min="0">
         </div>
         <div class="input-group">
             <label for="minDepth">Minimum Depth (m):</label>
@@ -37,6 +37,18 @@
         <button onclick="convertUnits()">Calculate</button>
         <div class="result">
             <p>Max Slot Loss Component: <span id="maxLossResult"></span></p>
+        </div>
+        <div class="result">
+            <p>Max Cell Turbulence Component: <span id="maxTurbResult"></span></p>
+        </div>
+        <div class="result">
+            <p>Entry Velocity Component: <span id="entryVelocityResult"></span></p>
+        </div>
+        <div class="result">
+            <p>Minimum Depth Component: <span id="minDepthResult"></span></p>
+        </div>
+        <div class="result">
+            <p>Minimum Slot Width Component: <span id="minWidthResult"></span></p>
         </div>
     </div>
 
