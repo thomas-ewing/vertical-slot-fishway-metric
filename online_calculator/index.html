@@ -9,7 +9,7 @@
 <body>
     <div class="converter-container">
        <h1>Vertical Slot Fishway Performance Metric Calculator</h1>
-       <h2>Version 2</h2>
+       <h3>Version 2</h3>
        <div class="input-group">
             <label for="fishLength">Fish Length (mm):</label>
             <input type="number" id="fishLength" value="100" min="20" max="1200">
@@ -35,23 +35,34 @@
             <input type="number" id="minWidth" value="150" min="0">
         </div>
         <button onclick="convertUnits()">Calculate</button>
-        <div class="result">
-            <p>Max Slot Loss Component: <span id="maxLossResult"></span></p>
+        <div class="metric-result">
+            <p>Performance Metric: <span id="metricResult">1.00</span></p>
         </div>
-        <div class="result">
-            <p>Max Cell Turbulence Component: <span id="maxTurbResult"></span></p>
+        <fieldset>
+            <legend>Fishway Hydraulics Components:</legend>
+            <div class="component-result">
+                <p>Max Slot Loss Component: <span id="maxLossResult">1.00</span></p>
+            </div>
+            <div class="component-result">
+                <p>Max Cell Turbulence Component: <span id="maxTurbResult">1.00</span></p>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Fishway Size Components</legend>
+            <div class="component-result">
+                <p>Minimum Depth Component: <span id="minDepthResult">1.00</span></p>
+            </div>
+        <div class="component-result">
+            <p>Minimum Slot Width Component: <span id="minWidthResult">1.00</span></p>
         </div>
-        <div class="result">
-            <p>Entry Velocity Component: <span id="entryVelocityResult"></span></p>
-        </div>
-        <div class="result">
-            <p>Minimum Depth Component: <span id="minDepthResult"></span></p>
-        </div>
-        <div class="result">
-            <p>Minimum Slot Width Component: <span id="minWidthResult"></span></p>
-        </div>
+        </fieldset>
+        <fieldset>
+            <legend>Attraction Component</legend>
+            <div class="component-result">
+                <p>Entry Velocity Component: <span id="entryVelocityResult">1.00</span></p>
+            </div>
+        </fieldset>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>

@@ -41,7 +41,7 @@ function convertUnits() {
         diffFxn = (diffInterpNoFxn - maxLoss) / (diffInterpNoFxn-diffInterpFullFxn)
     }
 
-    document.getElementById('maxLossResult').textContent = diffFxn;
+    document.getElementById('maxLossResult').textContent = diffFxn.toFixed(2);
 
     // Maximum TDR Component
 
@@ -78,7 +78,7 @@ function convertUnits() {
         turbFxn = (turbInterpNoFxn - maxTurb) / (turbInterpNoFxn-turbInterpFullFxn)
     }
 
-    document.getElementById('maxTurbResult').textContent = turbFxn;
+    document.getElementById('maxTurbResult').textContent = turbFxn.toFixed(2);
 
     // Entry Velocity
 
@@ -95,7 +95,7 @@ function convertUnits() {
         entryVelocityFxn = (entryVelocity - entryVelocityInterpNoFxn) / (entryVelocityInterpFullFxn-entryVelocityInterpNoFxn)
     }
 
-    document.getElementById('entryVelocityResult').textContent = entryVelocityFxn;
+    document.getElementById('entryVelocityResult').textContent = entryVelocityFxn.toFixed(2);
 
     // Minimum Depth
 
@@ -132,7 +132,7 @@ function convertUnits() {
         depthFxn = (depthInterpNoFxn - minDepth) / (depthInterpNoFxn-depthInterpFullFxn)
     }
 
-    document.getElementById('minDepthResult').textContent = depthFxn;
+    document.getElementById('minDepthResult').textContent = depthFxn.toFixed(2);
 
     // Minimum Slot Width
 
@@ -172,6 +172,6 @@ function convertUnits() {
         widthFxn = (widthInterpNoFxn - minWidth) / (widthInterpNoFxn-widthInterpFullFxn)
     }
 
-    document.getElementById('minWidthResult').textContent = widthFxn;
+    document.getElementById('minWidthResult').textContent = widthFxn.toFixed(2);
 
 }
