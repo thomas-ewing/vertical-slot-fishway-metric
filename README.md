@@ -9,3 +9,33 @@ Vertical slot fishways operate by dividing the water level difference across a l
 The performance of a vertical slot fishway is highly dependent on its hydrodynamic performance. The hydrodynamic performance of vertical slot fishways is highly predictable using relatively simple numerical models. While the hydrodynamic performance is predictable the ability of vertical slot fishways to pass a given fish species and size is less predictable, at least using simple tools.
 
 This methodology and tools is intended to provide an estimate of fishway function (for fish) that can be coupled to hydrodynamic models, in-situ obervations, or used in the design process.
+
+Note that these tools have been prepared for use in Australia and has been calibrated for the fish species present in that bio-region. The swimming ability of fish in this region differs from those in other settings.
+
+## A fishway performance metric
+
+### Structure of the metric
+
+Contemporary vertical slot fishway design criteria specify targets for the following hydrodynamic parameters:
+- Maximum slot head loss (the maximum upstream to downstream water level difference between adjecent pools, normally measured in mm),
+- Maximum Average Fishway Pool Turbulence (the maximum average pool turbulence anywhere in the fishway, normally measured in Watts per cubic meter)
+- Slot width (the width of the slot, in mm)
+- Minimum flow depth (the minimum water depth anywhere in the fishway, in m)
+- Attraction flow intensity (measured at the fishway entry, and normally measured as slot loss at the entry in mm, or average slot velocity at the entry in meters per second).
+
+These parameters have also been adopted as they key components in the fishway performance metric. While the inputs of the performance metric calculation mimic the makeup of most commonly used design criteria, the parameter values are not referenced directly. The reasoning for this is discussed below.
+
+The fishway performance metric is calculated using the following equation.
+
+![alt text](main_equation.png "Main Metric Equation")
+
+- m<sub>VS</sub> is the main vertical slot performance metric value
+- m<sub>S</sub> is the performance criteria sub-component relating to slot head losses
+- m<sub>T</sub> is the performance criteria sub-component relating to pool turbulence
+- min(m<sub>S</sub>, m<sub>T</sub> ) is combined effect of the hydrodynamic fishway sub components
+- m<sub>D</sub> is the performance criteria sub-component relating to fishway depth
+- m<sub>W</sub> is the performance criteria sub-component relating to fishway width
+- min(m<sub>S</sub>, m<sub>T</sub> ) is combined effect of the fishway sizing components
+- m<sub>A</sub> is the performance criteria sub-component relating fishway attraction
+
+### Sub-components and Transfer Functions
