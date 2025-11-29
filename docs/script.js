@@ -174,4 +174,10 @@ function convertUnits() {
 
     document.getElementById('minWidthResult').textContent = widthFxn.toFixed(2);
 
+    // Master Metric Calculation
+
+    final_metrc = Math.min(diffFxn, turbFxn) * Math.min(widthFxn, depthFxn) * entryVelocityFxn
+    document.getElementById('metricResult').textContent = final_metrc.toFixed(2);
+
+
 }
