@@ -39,3 +39,31 @@ The fishway performance metric is calculated using the following equation.
 - m<sub>A</sub> is the performance criteria sub-component relating fishway attraction
 
 ### Sub-components and Transfer Functions
+
+The value of each of the fishway metric sub-components is a number between zero annd one. Each sub-metric is calclated using a transfer function that converts two inputs into a single output. One input to the transfer function is always fish size, in mm. The other input is specific to the sub-metric:
+- for m<sub>S</sub> the input is maximum fishway slot head loss in mm
+- for m<sub>T</sub> the input is maximum average pool turbulence in W m<sup>-3</sup>
+- for m<sub>D</sub> the input is minimum fishway depth in m
+- for m<sub>W</sub> the input is minimum effective slot width in mm
+- for m<sub>A</sub> the input is slot-averaged entry velocity in ms<sup>-1</sup>
+
+The operation of the transfer funcitons is intended to be flexible and can be any system where an output is calculated from the specified inputs is acceptable. The current transfer functions employ a simple interpolation scheme where for each transfer function a matrix of values are specified including:
+- fish size, for example [20 mm, 50 mm, 100 mm]
+- parameter value for _full function_ for example [50 mm, 60 mm, 70 mm]
+- parameter value for _no function_ for example [100 mm, 120 mm, 150 mm]
+
+The transfer function are calculated by:
+- using the specified input fish size to calculate a size specific interpolated _full function_ and _no function_ value
+- using the specified parameter input to calculate a transfer function value, interpolating between the previosuly calculated _full function_ and _no function_ values
+
+The transfer functions are essentially a two-dimensional look up table, and the five in use for this project are presented below.
+
+![alt text](python/SL_TF.png "Slot loss metric")
+
+![alt text](python/TDR_TF.png "Slot loss metric")
+
+![alt text](python/DEPTH_TF.png "Slot loss metric")
+
+![alt text](python/W_TF.png "Slot loss metric")
+
+![alt text](python/ENTRY_TF.png "Slot loss metric")
