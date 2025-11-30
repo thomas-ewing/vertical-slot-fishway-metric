@@ -67,3 +67,14 @@ The transfer functions are essentially a two-dimensional look up table, and the 
 ![alt text](python/W_TF.png "Slot loss metric")
 
 ![alt text](python/ENTRY_TF.png "Slot loss metric")
+
+### Derivation of the transfer functions
+
+The methodology used to derive the five individual transfer functions varies. The transfer functions relating to fishway size (slot width and depth) are based on dimensional reasoning and some information correlating fish width and length, for key species. The depth transfer function has been informed by PIT-tag observations of fish ascending fishways operating at low depth.
+
+The hydrodynamic transfer functions (slot loss and turbulence) have been calibrated against the result of:
+- 16 published vertical slot fishway evaluations, based on entry and exit trapping,
+- A long-term analysis of PIT-tag ascent records against hind-cast fishway hydraulic conditions for 5 fishway structures,
+- Several unpublished observations of fishway ascent performance, included as represent conditions no normally observed during fishway operation.
+
+A more detailed description of the tranfer function calibration process will be added to this documentation in the next model revision.

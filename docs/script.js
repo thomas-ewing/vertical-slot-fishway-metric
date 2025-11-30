@@ -8,9 +8,9 @@ function convertUnits() {
     
     // Maximum Water Level Differential Component
 
-    let diffTransferFunctionFishSize = new Array(20,50,100,200,700,1500);
-    let diffTransferFunctionFullFxn = new Array(85, 110, 140, 160, 170, 170)
-    let diffTransferFunctionNoFxn = new Array(120, 150, 175, 200, 240, 240)
+    let diffTransferFunctionFishSize = new Array(20,50,100,200,400,700,1500);
+    let diffTransferFunctionFullFxn = new Array(85, 110, 140, 160, 180, 200, 200)
+    let diffTransferFunctionNoFxn = new Array(120, 150, 200, 250, 320, 350, 350)
     nDiffTransferFunction = diffTransferFunctionFishSize.length;
 
     let diffInterpFullFxn = 0.0;

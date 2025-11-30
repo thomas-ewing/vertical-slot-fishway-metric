@@ -15,9 +15,7 @@ def two_point_set_transfer_function(fish_size, obs_value, tf_size, tf_full_fxn, 
         return np.interp(obs_value, np.array([interp_full_fxn_TDR,interp_no_fxn_TDR]), np.array([1.0,0.0]))
     
 headloss_transfer_function_size = np.array([20,50,100,200,400,700,1500])
-#headloss_transfer_function_full_function = np.array([85, 110, 140, 160, 170, 170])
 headloss_transfer_function_full_function = np.array([85, 110, 140, 160, 180, 200, 200])
-#headloss_transfer_function_no_function = np.array([120, 150, 175, 200, 240, 240])
 headloss_transfer_function_no_function = np.array([120, 150, 200, 250, 320, 350, 350])
 
 def calc_headloss_metric(fish_size, obs_value):
