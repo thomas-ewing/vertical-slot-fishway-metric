@@ -78,3 +78,5 @@ The hydrodynamic transfer functions (slot loss and turbulence) have been calibra
 - Several unpublished observations of fishway ascent performance, included as represent conditions no normally observed during fishway operation.
 
 A more detailed description of the tranfer function calibration process will be added to this documentation in the next model revision.
+
+More information to come...
